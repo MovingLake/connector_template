@@ -14,6 +14,15 @@
                     "element": {
                         "label": "control-label"
                     }
+                },
+                "query": {
+                    "grid": {
+                        "label": "col-sm-3",
+                        "control": "col-sm-9"
+                    },
+                    "element": {
+                        "label": "control-label"
+                    }
                 }
             },
             "schema_form": [
@@ -23,6 +32,14 @@
                     "label": "API Key",
                     "required": true,
                     "placeholder": "Enter your API Key",
+                    "autoComplete:": "off"
+                },
+                {
+                    "id": "query",
+                    "type": "INPUT",
+                    "label": "Query",
+                    "required": true,
+                    "placeholder": "Enter your Query",
                     "autoComplete:": "off"
                 }
             ]
@@ -43,6 +60,9 @@
                 "key_name_limit": "pageSize",
                 "default_start_date": "2020-01-01"
             },
+            "promote_creds_to_params": [
+                "company_id"
+            ],
             "url_root": "https://newsapi.org",
             "url_sandbox": "https://newsapi.org",
             "sand_box_active": false
