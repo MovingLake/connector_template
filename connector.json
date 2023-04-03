@@ -1,0 +1,56 @@
+{
+    "fields": {
+        "code": "newsapi",
+        "name": "NewsAPI",
+        "description": "NewsAPI connector",
+        "scheme_form_template": [],
+        "scheme_form_cred": {
+            "layout": {
+                "api_key": {
+                    "grid": {
+                        "label": "col-sm-3",
+                        "control": "col-sm-9"
+                    },
+                    "element": {
+                        "label": "control-label"
+                    }
+                }
+            },
+            "schema_form": [
+                {
+                    "id": "api_key",
+                    "type": "INPUT",
+                    "label": "API Key",
+                    "required": true,
+                    "placeholder": "Enter your API Key",
+                    "autoComplete:": "off"
+                }
+            ]
+        },
+        "provider_json": {
+            "auth": {
+                "type_auth": "custom_header",
+                "option_auth": "header",
+                "header_field": "X-Api-Key"
+            },
+            "code": "newsapi",
+            "defaults": {
+                "date_format": "%Y-%m-%dT%H:%M:%S.%fZ",
+                "return_rows": 25,
+                "has_paginate": true,
+                "key_name_page": "page",
+                "type_paginate": "from_to",
+                "key_name_limit": "pageSize",
+                "default_start_date": "2020-01-01"
+            },
+            "url_root": "https://newsapi.org",
+            "url_sandbox": "https://newsapi.org",
+            "sand_box_active": false
+        },
+        "user": null,
+        "category_connector": [20],
+        "is_active": true,
+        "icon": "s3/newsapi.png",
+        "is_user_authentication": false
+    }
+}
