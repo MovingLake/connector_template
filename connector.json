@@ -48,7 +48,6 @@
             "option_auth": "header",
             "header_field": "X-Api-Key"
         },
-        "code": "newsapi",
         "defaults": {
             "date_format": "%Y-%m-%dT%H:%M:%S.%fZ",
             "return_rows": 25,
