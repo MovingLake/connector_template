@@ -2,7 +2,6 @@
     "code": "newsapi",
     "name": "NewsAPI",
     "description": "NewsAPI connector",
-    "scheme_form_template": [],
     "scheme_form_cred": {
         "layout": {
             "api_key": {
