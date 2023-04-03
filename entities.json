@@ -1,1 +1,59 @@
-
+[
+    {
+        "fields": {
+            "name": "newsapi_everything_articles",
+            "description": "Returns articles based on the query",
+            "entity_json": {
+                "key": [
+                    "url"
+                ],
+                "json_node": "articles",
+                "date_format": "%Y-%m-%dT%H:%M:%S",
+                "description": "Returns articles based on the query",
+                "filter_by_dates": true,
+                "key_end_date": "from",
+                "key_start_date": "to",
+                "type_paginate": "page",
+                "has_paginate": true,
+                "key_name_limit": "pageSize",
+                "key_name_page": "pageNumber",
+                "query_params": {
+                    "q": "{query}"
+                }
+            },
+            "repeat_every": 86400,
+            "is_active": true,
+            "timing_configuration": {
+                "validation_data": {
+                    "allowed_repeat_every": [
+                        {
+                            "seconds": 1800,
+                            "label": "Every 30 minutes"
+                        },
+                        {
+                            "seconds": 3600,
+                            "label": "Every hour"
+                        },
+                        {
+                            "seconds": 7200,
+                            "label": "Every 2 hour"
+                        },
+                        {
+                            "seconds": 10800,
+                            "label": "Every 3 hour"
+                        },
+                        {
+                            "seconds": 43200,
+                            "label": "Every 12 hour"
+                        },
+                        {
+                            "seconds": 86400,
+                            "label": "Every day"
+                        }
+                    ]
+                },
+                "strategy": "repeat_every"
+            }
+        }
+    }
+]
