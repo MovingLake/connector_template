@@ -62,11 +62,8 @@
         ],
         "url_root": "https://newsapi.org",
         "url_sandbox": "https://newsapi.org",
-        "sand_box_active": false
     },
-    "user": null,
     "category_connector": [20],
-    "is_active": true,
     "icon": "s3/newsapi.png",
     "is_user_authentication": false
 }
