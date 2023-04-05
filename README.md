@@ -1,6 +1,10 @@
 # MovingLake Custom Connector Tempaltes
 Templates of the files needed to configure a new custom connector within MovingLake.
 
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis) 
+
 # connector.json
 
 This JSON configures the authentication, defaults and other properties of the connector. Here is a list of keys and their meaning:
@@ -196,3 +200,11 @@ This json file contains the configuration for each endpoint of an API (called en
 ## uses_cron_expression
 - Type: boolean
 - Description: Indicates whether a cron expression is used for scheduling data fetching.
+
+# connector.py
+
+A Python file which needs to define a class named Connector and which overrides the BaseClient class. Using this class, custom authentication logic can be used. This file is necessary even if nothing is overridden. Finally most authentication schemes are currently not really supported so we recommend always implementing your own authentication. 
+
+# newsapi.png
+
+A png, jpg or webp file with the logo of your connector. Should be a square image at most 400x400 in size. Verify that the name of the file matches your configuration connector.json file.
